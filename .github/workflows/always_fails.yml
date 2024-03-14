@@ -2,7 +2,7 @@ name: Fail on Pull Request
 
 on:
   pull_request:
-    types: [opened, synchronize, reopened]
+    branches: [ main ]
 
 jobs:
   fail_job:
