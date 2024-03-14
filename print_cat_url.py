@@ -2,7 +2,7 @@ import os
 import requests
 
 def get_cat_picture_url():
-    api_key = os.getenv("cats_api_key")
+    api_key = os.getenv("CATS_API_KEY")
     if not api_key:
         print("Error: API key not found. Please set the 'cats_api_key' environmental variable.")
         return
