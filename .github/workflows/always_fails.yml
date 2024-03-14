@@ -1,0 +1,13 @@
+name: Fail on Pull Request
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  fail_job:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Always Fail Step
+      run: exit 1  # This command always exits with a non-zero status code, causing the job to fail
