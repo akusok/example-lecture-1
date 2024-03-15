@@ -1,4 +1,4 @@
-name: Get Cat Picture on Pull Request
+name: A Cat Picture on Pull Request
 
 on:
   pull_request:
